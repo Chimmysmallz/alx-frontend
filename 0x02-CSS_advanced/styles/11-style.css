@@ -1,0 +1,55 @@
+/* styles/10-style.css */
+:root {
+--line-height-small: 1.2;
+--line-height-base: 1.5;
+--line-height-big: 1.8;
+--section-header-align: center;
+}
+
+html {
+font-size: 62.5%;
+}
+
+body {
+font-size: var(--font-size-medium);
+font-family: var(--font-family-base);
+font-weight: var(--font-weight-regular);
+min-height: 100%;
+line-height: var(--line-height-base);
+color: var(--text-color);
+}
+
+a {
+text-decoration: none;
+color: var(--text-color);
+}
+
+.section-header {
+text-align: var(--section-header-align);
+}
+
+.card-category,
+.section-tagline {
+color: var(--color-primary);
+}
+
+h1, h2, h3, h4, h5, h6 {
+font-family: var(--font-family-title);
+font-weight: var(--font-weight-bold);
+}
+
+.section-tagline {
+font-family: var(--font-family-title);
+text-transform: var(--section-tagline-transform);
+font-weight: var(--font-weight-bold);
+}
+
+/* New styles for 11-style.css */
+
+:root {
+--section-tagline-transform: uppercase;
+}
+
+.section-tagline {
+text-transform: var(--section-tagline-transform);
+}
