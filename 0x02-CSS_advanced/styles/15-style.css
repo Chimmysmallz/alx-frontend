@@ -1,0 +1,146 @@
+/* Universal box sizing rule */
+* {
+  box-sizing: border-box;
+}
+
+/* HTML element styling */
+html {
+  font-size: 62.5%;
+  line-height: var(--line-height-base);
+  font-family: var(--font-family-base);
+  color: var(--text-color);
+}
+
+/* Body element styling */
+body {
+  font-size: var(--font-size-medium);
+  font-weight: var(--font-weight-regular);
+}
+
+/* Anchor element styling */
+a[href]:not([class]) {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Anchor element states */
+a[href]:not([class]):visited {
+  font-style: italic;
+}
+
+a[href]:not([class]):hover {
+  text-decoration: underline;
+}
+
+a[href]:not([class]):active {
+  background-color: var(--color-light-grey);
+}
+
+/* Section title styling */
+.section-title {
+  font-family: var(--font-family-title);
+  font-size: var(--font-size-xx-large);
+  font-weight: var(--font-weight-bold);
+  margin: var(--section-title-margin);
+  color: var(--section-title-color);
+}
+
+/* Section header styling */
+.section-header {
+  text-align: var(--section-header-align);
+}
+
+/* Section tagline styling */
+.section-tagline {
+  font-family: var(--font-family-title);
+  font-weight: var(--font-weight-bold);
+  text-transform: var(--section-tagline-transform);
+  color: var(--color-primary);
+}
+
+/* Card category styling */
+.card-category {
+  color: var(--color-primary);
+}
+
+/* Section heading styling */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-family-title);
+  font-weight: var(--font-weight-bold);
+  margin-top: 0;
+}
+
+h1 {
+  font-size: var(--font-size-xx-large);
+}
+
+h2 {
+  font-size: var(--font-size-x-large);
+}
+
+h3 {
+  font-size: var(--font-size-large);
+}
+
+h4 {
+  font-size: var(--font-size-medium);
+}
+
+h5 {
+  font-size: var(--font-size-small);
+}
+
+h6 {
+  font-size: var(--font-size-small);
+  text-transform: uppercase;
+}
+
+/* Card container styling */
+.card {
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.15);
+  overflow: hidden;
+}
+
+/* Card image styling */
+.card-image img {
+  width: 100%;
+  display: block;
+}
+
+/* Card content styling */
+.card-content {
+  padding: 16px;
+}
+
+/* Card title styling */
+.card-title {
+  margin-top: 0;
+}
+
+/* Card excerpt styling */
+.card-excerpt {
+  margin-top: 16px;
+}
+
+/* Card button styling */
+.card-button {
+  display: inline-block;
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  padding: 8px 16px;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+}
+
+.card-button:hover {
+  background-color: #c4314b;
+}
+
+/* Responsive media query */
+@media (max-width: 768px) {
+  html {
+    font-size: 50%;
+  }
+}
