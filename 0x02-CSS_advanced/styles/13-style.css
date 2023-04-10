@@ -1,0 +1,20 @@
+/* styles/13-style.css */
+
+a[href]:link {
+color: var(--text-color);
+text-decoration: none;
+}
+
+a[href]:visited {
+color: var(--text-color);
+text-decoration: none;
+font-style: italic;
+}
+
+a[href]:hover {
+text-decoration: underline;
+}
+
+a[href]:active {
+background-color: var(--color-light-grey);
+}
